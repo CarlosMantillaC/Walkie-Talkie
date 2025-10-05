@@ -1,0 +1,1194 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C45D92DF2E31647300B3033B /* MockRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92DE2E31647300B3033B /* MockRegisterView.swift */; };
+		C45D92E12E3164B100B3033B /* MockRegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92E02E3164B100B3033B /* MockRegisterInteractor.swift */; };
+		C45D92E52E31664500B3033B /* MockRegisterInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92E42E31664500B3033B /* MockRegisterInteractorOutput.swift */; };
+		C45D92E72E31672600B3033B /* MockRegisterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92E62E31672600B3033B /* MockRegisterRepository.swift */; };
+		C45D92ED2E31683D00B3033B /* RegisterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92EC2E31683D00B3033B /* RegisterInteractorTests.swift */; };
+		C45D92EF2E3168E200B3033B /* RegisterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92EE2E3168E200B3033B /* RegisterPresenterTests.swift */; };
+		C45D92F12E316AB600B3033B /* RegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92F02E316AB600B3033B /* RegisterUITests.swift */; };
+		C45D92F62E31704F00B3033B /* StubURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92F52E31704F00B3033B /* StubURLProtocol.swift */; };
+		C45D92F82E31706D00B3033B /* RegisterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92F72E31706D00B3033B /* RegisterRepositoryTests.swift */; };
+		C45D92FC2E31717B00B3033B /* MockLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92FB2E31717B00B3033B /* MockLoginView.swift */; };
+		C45D92FE2E31719000B3033B /* MockLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92FD2E31719000B3033B /* MockLoginInteractor.swift */; };
+		C45D93002E3171A700B3033B /* MockLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D92FF2E3171A700B3033B /* MockLoginRouter.swift */; };
+		C45D93022E3171BF00B3033B /* MockLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D93012E3171BF00B3033B /* MockLoginRepository.swift */; };
+		C45D93042E31723000B3033B /* MockLoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D93032E31723000B3033B /* MockLoginInteractorOutput.swift */; };
+		C45D930A2E31731A00B3033B /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D93092E31731A00B3033B /* LoginPresenterTests.swift */; };
+		C45D930C2E3173F400B3033B /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D930B2E3173F400B3033B /* LoginInteractorTests.swift */; };
+		C45D93102E31755600B3033B /* LoginRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D930F2E31755600B3033B /* LoginRepositoryTests.swift */; };
+		C45DBFA12E350D00007DAD63 /* MockChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFA02E350D00007DAD63 /* MockChannelView.swift */; };
+		C45DBFA92E351991007DAD63 /* MockChannelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFA82E351991007DAD63 /* MockChannelPresenter.swift */; };
+		C45DBFAB2E3519E8007DAD63 /* ChannelInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFAA2E3519E8007DAD63 /* ChannelInteractorTests.swift */; };
+		C45DBFAD2E351C66007DAD63 /* MockWebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFAC2E351C66007DAD63 /* MockWebSocketService.swift */; };
+		C45DBFAF2E351C90007DAD63 /* MockAudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFAE2E351C90007DAD63 /* MockAudioService.swift */; };
+		C45DBFB12E351CDB007DAD63 /* MockChannelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFB02E351CDB007DAD63 /* MockChannelInteractor.swift */; };
+		C45DBFB32E351D3B007DAD63 /* MockChannelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFB22E351D3B007DAD63 /* MockChannelRouter.swift */; };
+		C45DBFB52E351E54007DAD63 /* ChannelPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFB42E351E54007DAD63 /* ChannelPresenterTests.swift */; };
+		C45DBFB72E352CF4007DAD63 /* ChannelUsersRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFB62E352CF4007DAD63 /* ChannelUsersRepositoryTests.swift */; };
+		C45DBFB92E353015007DAD63 /* ChannelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DBFB82E353015007DAD63 /* ChannelUITests.swift */; };
+		C45E284C2E5DF53600FE340D /* LoginEntitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E284B2E5DF53600FE340D /* LoginEntitiesTests.swift */; };
+		C45E284E2E5E008100FE340D /* RegisterEntitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E284D2E5E008100FE340D /* RegisterEntitiesTests.swift */; };
+		C45E28502E5E0F4B00FE340D /* ChannelsEntitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E284F2E5E0F4B00FE340D /* ChannelsEntitiesTests.swift */; };
+		C46024A42E26FFCF0032EDA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460249E2E26FFCF0032EDA6 /* AppDelegate.swift */; };
+		C46024A52E26FFCF0032EDA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024A12E26FFCF0032EDA6 /* SceneDelegate.swift */; };
+		C46024A72E26FFCF0032EDA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C460249F2E26FFCF0032EDA6 /* Assets.xcassets */; };
+		C46024B42E2700540032EDA6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024B22E2700540032EDA6 /* LoginViewController.swift */; };
+		C46024B52E2700540032EDA6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46024B32E2700540032EDA6 /* LoginViewController.xib */; };
+		C46024B82E2701A20032EDA6 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024B72E2701A20032EDA6 /* APIConstants.swift */; };
+		C46024BA2E2702180032EDA6 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024B92E2702180032EDA6 /* URLRequest+Extensions.swift */; };
+		C46024BC2E27023B0032EDA6 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024BB2E27023B0032EDA6 /* TokenManager.swift */; };
+		C46024C32E2702B30032EDA6 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024C22E2702B30032EDA6 /* LoginRepository.swift */; };
+		C46024C62E2702E90032EDA6 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024C52E2702E90032EDA6 /* LoginRequest.swift */; };
+		C46024C82E2702FC0032EDA6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024C72E2702FC0032EDA6 /* LoginResponse.swift */; };
+		C46024CA2E2703180032EDA6 /* LoginAPIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024C92E2703180032EDA6 /* LoginAPIErrorResponse.swift */; };
+		C46024CC2E2703530032EDA6 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024CB2E2703530032EDA6 /* LoginProtocols.swift */; };
+		C46024CE2E2703730032EDA6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024CD2E2703730032EDA6 /* LoginPresenter.swift */; };
+		C46024D02E27038A0032EDA6 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024CF2E27038A0032EDA6 /* LoginInteractor.swift */; };
+		C46024D22E2703A20032EDA6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024D12E2703A20032EDA6 /* LoginRouter.swift */; };
+		C46024D52E27040F0032EDA6 /* KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024D42E27040F0032EDA6 /* KeyboardHandling.swift */; };
+		C46024D92E27F75A0032EDA6 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024D82E27F75A0032EDA6 /* RegisterRequest.swift */; };
+		C46024DB2E27F81B0032EDA6 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024DA2E27F81B0032EDA6 /* RegisterResponse.swift */; };
+		C46024DD2E27F8310032EDA6 /* RegisterAPIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024DC2E27F8310032EDA6 /* RegisterAPIErrorResponse.swift */; };
+		C46024E22E27F86D0032EDA6 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024E12E27F86D0032EDA6 /* RegisterProtocols.swift */; };
+		C46024E42E27F8930032EDA6 /* RegisterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024E32E27F8930032EDA6 /* RegisterRepository.swift */; };
+		C46024E62E27F8B40032EDA6 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024E52E27F8B40032EDA6 /* RegisterInteractor.swift */; };
+		C46024E82E27F8CB0032EDA6 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024E72E27F8CB0032EDA6 /* RegisterPresenter.swift */; };
+		C46024EB2E27F8E40032EDA6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024E92E27F8E40032EDA6 /* RegisterViewController.swift */; };
+		C46024EC2E27F8E40032EDA6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46024EA2E27F8E40032EDA6 /* RegisterViewController.xib */; };
+		C46024EE2E27F92D0032EDA6 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024ED2E27F92D0032EDA6 /* StyleTextField.swift */; };
+		C46024F02E27F9480032EDA6 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024EF2E27F9480032EDA6 /* RegisterRouter.swift */; };
+		C46024F32E2803F60032EDA6 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024F22E2803F60032EDA6 /* LogoutResponse.swift */; };
+		C46024F52E28042A0032EDA6 /* ChannelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024F42E28042A0032EDA6 /* ChannelInteractor.swift */; };
+		C46024F72E2804420032EDA6 /* ChannelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024F62E2804420032EDA6 /* ChannelPresenter.swift */; };
+		C46024F92E2804520032EDA6 /* ChannelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024F82E2804520032EDA6 /* ChannelProtocols.swift */; };
+		C46024FD2E2804DE0032EDA6 /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46024FB2E2804DE0032EDA6 /* ChannelViewController.xib */; };
+		C46024FF2E2805390032EDA6 /* ChannelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46024FE2E2805390032EDA6 /* ChannelRouter.swift */; };
+		C46025072E2905640032EDA6 /* ChannelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025052E2905640032EDA6 /* ChannelsTableViewCell.swift */; };
+		C46025082E2905640032EDA6 /* ChannelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46025062E2905640032EDA6 /* ChannelsTableViewCell.xib */; };
+		C460250A2E290A200032EDA6 /* ChannelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025092E290A200032EDA6 /* ChannelsRepository.swift */; };
+		C460250D2E290A8B0032EDA6 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460250C2E290A8B0032EDA6 /* Channels.swift */; };
+		C460250F2E290AD20032EDA6 /* ChannelsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460250E2E290AD20032EDA6 /* ChannelsProtocols.swift */; };
+		C46025112E2916110032EDA6 /* ChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025102E2916110032EDA6 /* ChannelsInteractor.swift */; };
+		C46025132E2917C90032EDA6 /* ChannelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025122E2917C90032EDA6 /* ChannelsPresenter.swift */; };
+		C46025162E2918730032EDA6 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025142E2918730032EDA6 /* ChannelsViewController.swift */; };
+		C46025172E2918730032EDA6 /* ChannelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46025152E2918730032EDA6 /* ChannelsViewController.xib */; };
+		C46025192E291ACE0032EDA6 /* ChannelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46025182E291ACE0032EDA6 /* ChannelsRouter.swift */; };
+		C460251B2E2939B00032EDA6 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460251A2E2939B00032EDA6 /* ChannelViewController.swift */; };
+		C460251D2E29439A0032EDA6 /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460251C2E29439A0032EDA6 /* WebSocketService.swift */; };
+		C46091082E5F4D8000AE9A12 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46091072E5F4D8000AE9A12 /* NetworkService.swift */; };
+		C460910E2E5F663F00AE9A12 /* AudioServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460910D2E5F663F00AE9A12 /* AudioServiceTests.swift */; };
+		C466098F2E3BAB8900834531 /* MockChannelUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C466098E2E3BAB8900834531 /* MockChannelUsersRepository.swift */; };
+		C47B30912E30276500275424 /* ChannelUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B30902E30276500275424 /* ChannelUsersRepository.swift */; };
+		C47EB27B2E3BF58C002EA5A0 /* audio_end_talking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C47EB2792E3BF58C002EA5A0 /* audio_end_talking.mp3 */; };
+		C47EB27C2E3BF58C002EA5A0 /* audio_start_talking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C47EB27A2E3BF58C002EA5A0 /* audio_start_talking.mp3 */; };
+		C47EB27E2E3BF5A2002EA5A0 /* SoundButtonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EB27D2E3BF5A2002EA5A0 /* SoundButtonService.swift */; };
+		C480A1072E297AE1000E0C7F /* AudioServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A1062E297AE1000E0C7F /* AudioServiceProtocol.swift */; };
+		C480A10A2E297B11000E0C7F /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A1092E297B11000E0C7F /* AudioService.swift */; };
+		C480A10D2E298457000E0C7F /* WebSocketServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A10C2E298457000E0C7F /* WebSocketServiceDelegate.swift */; };
+		C480A10F2E298481000E0C7F /* WebSocketServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480A10E2E298481000E0C7F /* WebSocketServiceProtocol.swift */; };
+		C48C3FD72E2AC6E600D9B24A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C3FD62E2AC6E600D9B24A /* UIColor+Hex.swift */; };
+		C48C3FD92E2AC99400D9B24A /* UIViewController+GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C3FD82E2AC99400D9B24A /* UIViewController+GradientBackground.swift */; };
+		C49947A22E624ABD00CE40BB /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49947A12E624ABD00CE40BB /* LoginRepositoryProtocol.swift */; };
+		C49947A42E624AE000CE40BB /* RegisterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49947A32E624AE000CE40BB /* RegisterRepositoryProtocol.swift */; };
+		C49947A62E624B0F00CE40BB /* ChannelUsersRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49947A52E624B0F00CE40BB /* ChannelUsersRepositoryProtocol.swift */; };
+		C49947A82E624B2400CE40BB /* ChannelsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49947A72E624B2400CE40BB /* ChannelsRepositoryProtocol.swift */; };
+		C4B989492E340F12004CC463 /* MockChannelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B989482E340F12004CC463 /* MockChannelsRepository.swift */; };
+		C4B9894B2E340F31004CC463 /* MockChannelsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9894A2E340F31004CC463 /* MockChannelsInteractorOutput.swift */; };
+		C4B9894D2E340F50004CC463 /* ChannelsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9894C2E340F50004CC463 /* ChannelsInteractorTests.swift */; };
+		C4B9894F2E340FA7004CC463 /* MockChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9894E2E340FA7004CC463 /* MockChannelsView.swift */; };
+		C4B989512E340FC7004CC463 /* MockChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B989502E340FC7004CC463 /* MockChannelsInteractor.swift */; };
+		C4B989572E3410A9004CC463 /* ChannelsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B989562E3410A9004CC463 /* ChannelsPresenterTests.swift */; };
+		C4B9895D2E3414CD004CC463 /* ChannelsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9895C2E3414CD004CC463 /* ChannelsRepositoryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C46024812E26FF8A0032EDA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46024622E26FF880032EDA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46024692E26FF880032EDA6;
+			remoteInfo = GopeTalkie;
+		};
+		C460248B2E26FF8A0032EDA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46024622E26FF880032EDA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46024692E26FF880032EDA6;
+			remoteInfo = GopeTalkie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C45D92DE2E31647300B3033B /* MockRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRegisterView.swift; sourceTree = "<group>"; };
+		C45D92E02E3164B100B3033B /* MockRegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRegisterInteractor.swift; sourceTree = "<group>"; };
+		C45D92E42E31664500B3033B /* MockRegisterInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRegisterInteractorOutput.swift; sourceTree = "<group>"; };
+		C45D92E62E31672600B3033B /* MockRegisterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRegisterRepository.swift; sourceTree = "<group>"; };
+		C45D92EC2E31683D00B3033B /* RegisterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorTests.swift; sourceTree = "<group>"; };
+		C45D92EE2E3168E200B3033B /* RegisterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterTests.swift; sourceTree = "<group>"; };
+		C45D92F02E316AB600B3033B /* RegisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUITests.swift; sourceTree = "<group>"; };
+		C45D92F52E31704F00B3033B /* StubURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLProtocol.swift; sourceTree = "<group>"; };
+		C45D92F72E31706D00B3033B /* RegisterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryTests.swift; sourceTree = "<group>"; };
+		C45D92FB2E31717B00B3033B /* MockLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginView.swift; sourceTree = "<group>"; };
+		C45D92FD2E31719000B3033B /* MockLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractor.swift; sourceTree = "<group>"; };
+		C45D92FF2E3171A700B3033B /* MockLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginRouter.swift; sourceTree = "<group>"; };
+		C45D93012E3171BF00B3033B /* MockLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginRepository.swift; sourceTree = "<group>"; };
+		C45D93032E31723000B3033B /* MockLoginInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractorOutput.swift; sourceTree = "<group>"; };
+		C45D93092E31731A00B3033B /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		C45D930B2E3173F400B3033B /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		C45D930F2E31755600B3033B /* LoginRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryTests.swift; sourceTree = "<group>"; };
+		C45DBFA02E350D00007DAD63 /* MockChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelView.swift; sourceTree = "<group>"; };
+		C45DBFA82E351991007DAD63 /* MockChannelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelPresenter.swift; sourceTree = "<group>"; };
+		C45DBFAA2E3519E8007DAD63 /* ChannelInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInteractorTests.swift; sourceTree = "<group>"; };
+		C45DBFAC2E351C66007DAD63 /* MockWebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebSocketService.swift; sourceTree = "<group>"; };
+		C45DBFAE2E351C90007DAD63 /* MockAudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAudioService.swift; sourceTree = "<group>"; };
+		C45DBFB02E351CDB007DAD63 /* MockChannelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelInteractor.swift; sourceTree = "<group>"; };
+		C45DBFB22E351D3B007DAD63 /* MockChannelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelRouter.swift; sourceTree = "<group>"; };
+		C45DBFB42E351E54007DAD63 /* ChannelPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPresenterTests.swift; sourceTree = "<group>"; };
+		C45DBFB62E352CF4007DAD63 /* ChannelUsersRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUsersRepositoryTests.swift; sourceTree = "<group>"; };
+		C45DBFB82E353015007DAD63 /* ChannelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUITests.swift; sourceTree = "<group>"; };
+		C45E284B2E5DF53600FE340D /* LoginEntitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntitiesTests.swift; sourceTree = "<group>"; };
+		C45E284D2E5E008100FE340D /* RegisterEntitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntitiesTests.swift; sourceTree = "<group>"; };
+		C45E284F2E5E0F4B00FE340D /* ChannelsEntitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsEntitiesTests.swift; sourceTree = "<group>"; };
+		C460246A2E26FF880032EDA6 /* GopeTalkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GopeTalkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46024802E26FF8A0032EDA6 /* GopeTalkieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopeTalkieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C460248A2E26FF8A0032EDA6 /* GopeTalkieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopeTalkieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C460249E2E26FFCF0032EDA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C460249F2E26FFCF0032EDA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C46024A02E26FFCF0032EDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46024A12E26FFCF0032EDA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C46024B22E2700540032EDA6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C46024B32E2700540032EDA6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C46024B72E2701A20032EDA6 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		C46024B92E2702180032EDA6 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		C46024BB2E27023B0032EDA6 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		C46024C22E2702B30032EDA6 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		C46024C52E2702E90032EDA6 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		C46024C72E2702FC0032EDA6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		C46024C92E2703180032EDA6 /* LoginAPIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIErrorResponse.swift; sourceTree = "<group>"; };
+		C46024CB2E2703530032EDA6 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		C46024CD2E2703730032EDA6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C46024CF2E27038A0032EDA6 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C46024D12E2703A20032EDA6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		C46024D42E27040F0032EDA6 /* KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandling.swift; sourceTree = "<group>"; };
+		C46024D82E27F75A0032EDA6 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		C46024DA2E27F81B0032EDA6 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		C46024DC2E27F8310032EDA6 /* RegisterAPIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPIErrorResponse.swift; sourceTree = "<group>"; };
+		C46024E12E27F86D0032EDA6 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		C46024E32E27F8930032EDA6 /* RegisterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepository.swift; sourceTree = "<group>"; };
+		C46024E52E27F8B40032EDA6 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		C46024E72E27F8CB0032EDA6 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		C46024E92E27F8E40032EDA6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C46024EA2E27F8E40032EDA6 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		C46024ED2E27F92D0032EDA6 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
+		C46024EF2E27F9480032EDA6 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		C46024F22E2803F60032EDA6 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
+		C46024F42E28042A0032EDA6 /* ChannelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInteractor.swift; sourceTree = "<group>"; };
+		C46024F62E2804420032EDA6 /* ChannelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPresenter.swift; sourceTree = "<group>"; };
+		C46024F82E2804520032EDA6 /* ChannelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelProtocols.swift; sourceTree = "<group>"; };
+		C46024FB2E2804DE0032EDA6 /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
+		C46024FE2E2805390032EDA6 /* ChannelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRouter.swift; sourceTree = "<group>"; };
+		C46025052E2905640032EDA6 /* ChannelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewCell.swift; sourceTree = "<group>"; };
+		C46025062E2905640032EDA6 /* ChannelsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsTableViewCell.xib; sourceTree = "<group>"; };
+		C46025092E290A200032EDA6 /* ChannelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsRepository.swift; sourceTree = "<group>"; };
+		C460250C2E290A8B0032EDA6 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		C460250E2E290AD20032EDA6 /* ChannelsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsProtocols.swift; sourceTree = "<group>"; };
+		C46025102E2916110032EDA6 /* ChannelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsInteractor.swift; sourceTree = "<group>"; };
+		C46025122E2917C90032EDA6 /* ChannelsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPresenter.swift; sourceTree = "<group>"; };
+		C46025142E2918730032EDA6 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		C46025152E2918730032EDA6 /* ChannelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsViewController.xib; sourceTree = "<group>"; };
+		C46025182E291ACE0032EDA6 /* ChannelsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsRouter.swift; sourceTree = "<group>"; };
+		C460251A2E2939B00032EDA6 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		C460251C2E29439A0032EDA6 /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		C46091072E5F4D8000AE9A12 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C460910D2E5F663F00AE9A12 /* AudioServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioServiceTests.swift; sourceTree = "<group>"; };
+		C466098E2E3BAB8900834531 /* MockChannelUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelUsersRepository.swift; sourceTree = "<group>"; };
+		C47B30902E30276500275424 /* ChannelUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUsersRepository.swift; sourceTree = "<group>"; };
+		C47EB2792E3BF58C002EA5A0 /* audio_end_talking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_end_talking.mp3; sourceTree = "<group>"; };
+		C47EB27A2E3BF58C002EA5A0 /* audio_start_talking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_start_talking.mp3; sourceTree = "<group>"; };
+		C47EB27D2E3BF5A2002EA5A0 /* SoundButtonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonService.swift; sourceTree = "<group>"; };
+		C480A1062E297AE1000E0C7F /* AudioServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioServiceProtocol.swift; sourceTree = "<group>"; };
+		C480A1092E297B11000E0C7F /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		C480A10C2E298457000E0C7F /* WebSocketServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceDelegate.swift; sourceTree = "<group>"; };
+		C480A10E2E298481000E0C7F /* WebSocketServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceProtocol.swift; sourceTree = "<group>"; };
+		C48C3FD62E2AC6E600D9B24A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		C48C3FD82E2AC99400D9B24A /* UIViewController+GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBackground.swift"; sourceTree = "<group>"; };
+		C49947A12E624ABD00CE40BB /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C49947A32E624AE000CE40BB /* RegisterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C49947A52E624B0F00CE40BB /* ChannelUsersRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUsersRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C49947A72E624B2400CE40BB /* ChannelsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C4B989482E340F12004CC463 /* MockChannelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsRepository.swift; sourceTree = "<group>"; };
+		C4B9894A2E340F31004CC463 /* MockChannelsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsInteractorOutput.swift; sourceTree = "<group>"; };
+		C4B9894C2E340F50004CC463 /* ChannelsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsInteractorTests.swift; sourceTree = "<group>"; };
+		C4B9894E2E340FA7004CC463 /* MockChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsView.swift; sourceTree = "<group>"; };
+		C4B989502E340FC7004CC463 /* MockChannelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsInteractor.swift; sourceTree = "<group>"; };
+		C4B989562E3410A9004CC463 /* ChannelsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPresenterTests.swift; sourceTree = "<group>"; };
+		C4B9895C2E3414CD004CC463 /* ChannelsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsRepositoryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C46024672E26FF880032EDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C460247D2E26FF8A0032EDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46024872E26FF8A0032EDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C45D92DC2E3163DD00B3033B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92DD2E3163F200B3033B /* Mocks */,
+				C45D92EE2E3168E200B3033B /* RegisterPresenterTests.swift */,
+				C45D92EC2E31683D00B3033B /* RegisterInteractorTests.swift */,
+				C45E284D2E5E008100FE340D /* RegisterEntitiesTests.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C45D92DD2E3163F200B3033B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92DE2E31647300B3033B /* MockRegisterView.swift */,
+				C45D92E42E31664500B3033B /* MockRegisterInteractorOutput.swift */,
+				C45D92E02E3164B100B3033B /* MockRegisterInteractor.swift */,
+				C45D92E62E31672600B3033B /* MockRegisterRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C45D92F22E316F6C00B3033B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92F32E316F8000B3033B /* Mocks */,
+				C45D93092E31731A00B3033B /* LoginPresenterTests.swift */,
+				C45D930B2E3173F400B3033B /* LoginInteractorTests.swift */,
+				C45E284B2E5DF53600FE340D /* LoginEntitiesTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C45D92F32E316F8000B3033B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92FB2E31717B00B3033B /* MockLoginView.swift */,
+				C45D92FD2E31719000B3033B /* MockLoginInteractor.swift */,
+				C45D92FF2E3171A700B3033B /* MockLoginRouter.swift */,
+				C45D93012E3171BF00B3033B /* MockLoginRepository.swift */,
+				C45D93032E31723000B3033B /* MockLoginInteractorOutput.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C45D92F42E316FA600B3033B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92F52E31704F00B3033B /* StubURLProtocol.swift */,
+				C45D92F72E31706D00B3033B /* RegisterRepositoryTests.swift */,
+				C45D930F2E31755600B3033B /* LoginRepositoryTests.swift */,
+				C4B9895C2E3414CD004CC463 /* ChannelsRepositoryTests.swift */,
+				C45DBFB62E352CF4007DAD63 /* ChannelUsersRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C45D93222E33DC2A00B3033B /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				C45D93252E33DC9B00B3033B /* Mocks */,
+				C4B9894C2E340F50004CC463 /* ChannelsInteractorTests.swift */,
+				C4B989562E3410A9004CC463 /* ChannelsPresenterTests.swift */,
+				C45E284F2E5E0F4B00FE340D /* ChannelsEntitiesTests.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		C45D93252E33DC9B00B3033B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B989482E340F12004CC463 /* MockChannelsRepository.swift */,
+				C4B9894A2E340F31004CC463 /* MockChannelsInteractorOutput.swift */,
+				C4B9894E2E340FA7004CC463 /* MockChannelsView.swift */,
+				C4B989502E340FC7004CC463 /* MockChannelsInteractor.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C45DBF9E2E350B9A007DAD63 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				C45DBF9F2E350BBB007DAD63 /* Mocks */,
+				C45DBFAA2E3519E8007DAD63 /* ChannelInteractorTests.swift */,
+				C45DBFB42E351E54007DAD63 /* ChannelPresenterTests.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		C45DBF9F2E350BBB007DAD63 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C45DBFA02E350D00007DAD63 /* MockChannelView.swift */,
+				C45DBFA82E351991007DAD63 /* MockChannelPresenter.swift */,
+				C45DBFAC2E351C66007DAD63 /* MockWebSocketService.swift */,
+				C45DBFAE2E351C90007DAD63 /* MockAudioService.swift */,
+				C45DBFB02E351CDB007DAD63 /* MockChannelInteractor.swift */,
+				C45DBFB22E351D3B007DAD63 /* MockChannelRouter.swift */,
+				C466098E2E3BAB8900834531 /* MockChannelUsersRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C46024612E26FF880032EDA6 = {
+			isa = PBXGroup;
+			children = (
+				C46024A32E26FFCF0032EDA6 /* GopeTalkie */,
+				C46024AA2E26FFD20032EDA6 /* GopeTalkieTests */,
+				C46024AE2E26FFD60032EDA6 /* GopeTalkieUITests */,
+				C460246B2E26FF880032EDA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C460246B2E26FF880032EDA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C460246A2E26FF880032EDA6 /* GopeTalkie.app */,
+				C46024802E26FF8A0032EDA6 /* GopeTalkieTests.xctest */,
+				C460248A2E26FF8A0032EDA6 /* GopeTalkieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C46024A32E26FFCF0032EDA6 /* GopeTalkie */ = {
+			isa = PBXGroup;
+			children = (
+				C47EB2782E3BF57B002EA5A0 /* Sound */,
+				C480A1052E2979D3000E0C7F /* Service */,
+				C46024B62E27018B0032EDA6 /* Networking */,
+				C46024C12E2702970032EDA6 /* Repositories */,
+				C46024B12E26FFE80032EDA6 /* Login */,
+				C46024D62E27F4D10032EDA6 /* Register */,
+				C46024D72E27F69C0032EDA6 /* Channel */,
+				C46025042E2904680032EDA6 /* Channels */,
+				C46024D32E2703DB0032EDA6 /* Components */,
+				C460249E2E26FFCF0032EDA6 /* AppDelegate.swift */,
+				C460249F2E26FFCF0032EDA6 /* Assets.xcassets */,
+				C46024A02E26FFCF0032EDA6 /* Info.plist */,
+				C46024A12E26FFCF0032EDA6 /* SceneDelegate.swift */,
+			);
+			path = GopeTalkie;
+			sourceTree = "<group>";
+		};
+		C46024AA2E26FFD20032EDA6 /* GopeTalkieTests */ = {
+			isa = PBXGroup;
+			children = (
+				C460910C2E5F663200AE9A12 /* Services */,
+				C45DBF9E2E350B9A007DAD63 /* Channel */,
+				C45D93222E33DC2A00B3033B /* Channels */,
+				C45D92F22E316F6C00B3033B /* Login */,
+				C45D92DC2E3163DD00B3033B /* Register */,
+				C45D92F42E316FA600B3033B /* Repository */,
+			);
+			path = GopeTalkieTests;
+			sourceTree = "<group>";
+		};
+		C46024AE2E26FFD60032EDA6 /* GopeTalkieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C45D92F02E316AB600B3033B /* RegisterUITests.swift */,
+				C45DBFB82E353015007DAD63 /* ChannelUITests.swift */,
+			);
+			path = GopeTalkieUITests;
+			sourceTree = "<group>";
+		};
+		C46024B12E26FFE80032EDA6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C46024C42E2702D60032EDA6 /* Entities */,
+				C46024B22E2700540032EDA6 /* LoginViewController.swift */,
+				C46024B32E2700540032EDA6 /* LoginViewController.xib */,
+				C46024CB2E2703530032EDA6 /* LoginProtocols.swift */,
+				C46024CD2E2703730032EDA6 /* LoginPresenter.swift */,
+				C46024CF2E27038A0032EDA6 /* LoginInteractor.swift */,
+				C46024D12E2703A20032EDA6 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C46024B62E27018B0032EDA6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C46024B72E2701A20032EDA6 /* APIConstants.swift */,
+				C46024B92E2702180032EDA6 /* URLRequest+Extensions.swift */,
+				C46024BB2E27023B0032EDA6 /* TokenManager.swift */,
+				C46091072E5F4D8000AE9A12 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C46024C12E2702970032EDA6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C499479D2E624A3800CE40BB /* Login */,
+				C499479E2E624A6600CE40BB /* Register */,
+				C49947A02E624A8200CE40BB /* ChannelUsers */,
+				C499479F2E624A7200CE40BB /* Channels */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C46024C42E2702D60032EDA6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C46024C52E2702E90032EDA6 /* LoginRequest.swift */,
+				C46024C72E2702FC0032EDA6 /* LoginResponse.swift */,
+				C46024C92E2703180032EDA6 /* LoginAPIErrorResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46024D32E2703DB0032EDA6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C46024D42E27040F0032EDA6 /* KeyboardHandling.swift */,
+				C46024ED2E27F92D0032EDA6 /* StyleTextField.swift */,
+				C48C3FD62E2AC6E600D9B24A /* UIColor+Hex.swift */,
+				C48C3FD82E2AC99400D9B24A /* UIViewController+GradientBackground.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C46024D62E27F4D10032EDA6 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C46024E02E27F8500032EDA6 /* Entities */,
+				C46024E12E27F86D0032EDA6 /* RegisterProtocols.swift */,
+				C46024E52E27F8B40032EDA6 /* RegisterInteractor.swift */,
+				C46024E72E27F8CB0032EDA6 /* RegisterPresenter.swift */,
+				C46024E92E27F8E40032EDA6 /* RegisterViewController.swift */,
+				C46024EA2E27F8E40032EDA6 /* RegisterViewController.xib */,
+				C46024EF2E27F9480032EDA6 /* RegisterRouter.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C46024D72E27F69C0032EDA6 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				C46024F12E2803D60032EDA6 /* Entities */,
+				C46024F42E28042A0032EDA6 /* ChannelInteractor.swift */,
+				C46024F62E2804420032EDA6 /* ChannelPresenter.swift */,
+				C46024F82E2804520032EDA6 /* ChannelProtocols.swift */,
+				C460251A2E2939B00032EDA6 /* ChannelViewController.swift */,
+				C46024FB2E2804DE0032EDA6 /* ChannelViewController.xib */,
+				C46024FE2E2805390032EDA6 /* ChannelRouter.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		C46024E02E27F8500032EDA6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C46024D82E27F75A0032EDA6 /* RegisterRequest.swift */,
+				C46024DC2E27F8310032EDA6 /* RegisterAPIErrorResponse.swift */,
+				C46024DA2E27F81B0032EDA6 /* RegisterResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46024F12E2803D60032EDA6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46025042E2904680032EDA6 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				C460250B2E290A700032EDA6 /* Entities */,
+				C460250E2E290AD20032EDA6 /* ChannelsProtocols.swift */,
+				C46025102E2916110032EDA6 /* ChannelsInteractor.swift */,
+				C46025122E2917C90032EDA6 /* ChannelsPresenter.swift */,
+				C46025142E2918730032EDA6 /* ChannelsViewController.swift */,
+				C46025152E2918730032EDA6 /* ChannelsViewController.xib */,
+				C46025052E2905640032EDA6 /* ChannelsTableViewCell.swift */,
+				C46025062E2905640032EDA6 /* ChannelsTableViewCell.xib */,
+				C46025182E291ACE0032EDA6 /* ChannelsRouter.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		C460250B2E290A700032EDA6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C460250C2E290A8B0032EDA6 /* Channels.swift */,
+				C46024F22E2803F60032EDA6 /* LogoutResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C460910C2E5F663200AE9A12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C460910D2E5F663F00AE9A12 /* AudioServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C47EB2782E3BF57B002EA5A0 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				C47EB2792E3BF58C002EA5A0 /* audio_end_talking.mp3 */,
+				C47EB27A2E3BF58C002EA5A0 /* audio_start_talking.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		C480A1052E2979D3000E0C7F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C480A10B2E29843F000E0C7F /* WebSocketService */,
+				C480A1082E297AF4000E0C7F /* AudioService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C480A1082E297AF4000E0C7F /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				C480A1062E297AE1000E0C7F /* AudioServiceProtocol.swift */,
+				C480A1092E297B11000E0C7F /* AudioService.swift */,
+				C47EB27D2E3BF5A2002EA5A0 /* SoundButtonService.swift */,
+			);
+			path = AudioService;
+			sourceTree = "<group>";
+		};
+		C480A10B2E29843F000E0C7F /* WebSocketService */ = {
+			isa = PBXGroup;
+			children = (
+				C460251C2E29439A0032EDA6 /* WebSocketService.swift */,
+				C480A10C2E298457000E0C7F /* WebSocketServiceDelegate.swift */,
+				C480A10E2E298481000E0C7F /* WebSocketServiceProtocol.swift */,
+			);
+			path = WebSocketService;
+			sourceTree = "<group>";
+		};
+		C499479D2E624A3800CE40BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C46024C22E2702B30032EDA6 /* LoginRepository.swift */,
+				C49947A12E624ABD00CE40BB /* LoginRepositoryProtocol.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C499479E2E624A6600CE40BB /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C46024E32E27F8930032EDA6 /* RegisterRepository.swift */,
+				C49947A32E624AE000CE40BB /* RegisterRepositoryProtocol.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C499479F2E624A7200CE40BB /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				C46025092E290A200032EDA6 /* ChannelsRepository.swift */,
+				C49947A72E624B2400CE40BB /* ChannelsRepositoryProtocol.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		C49947A02E624A8200CE40BB /* ChannelUsers */ = {
+			isa = PBXGroup;
+			children = (
+				C47B30902E30276500275424 /* ChannelUsersRepository.swift */,
+				C49947A52E624B0F00CE40BB /* ChannelUsersRepositoryProtocol.swift */,
+			);
+			path = ChannelUsers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C46024692E26FF880032EDA6 /* GopeTalkie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46024932E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkie" */;
+			buildPhases = (
+				C46024662E26FF880032EDA6 /* Sources */,
+				C46024672E26FF880032EDA6 /* Frameworks */,
+				C46024682E26FF880032EDA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GopeTalkie;
+			packageProductDependencies = (
+			);
+			productName = GopeTalkie;
+			productReference = C460246A2E26FF880032EDA6 /* GopeTalkie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C460247F2E26FF8A0032EDA6 /* GopeTalkieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46024982E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkieTests" */;
+			buildPhases = (
+				C460247C2E26FF8A0032EDA6 /* Sources */,
+				C460247D2E26FF8A0032EDA6 /* Frameworks */,
+				C460247E2E26FF8A0032EDA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C46024822E26FF8A0032EDA6 /* PBXTargetDependency */,
+			);
+			name = GopeTalkieTests;
+			packageProductDependencies = (
+			);
+			productName = GopeTalkieTests;
+			productReference = C46024802E26FF8A0032EDA6 /* GopeTalkieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C46024892E26FF8A0032EDA6 /* GopeTalkieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C460249B2E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkieUITests" */;
+			buildPhases = (
+				C46024862E26FF8A0032EDA6 /* Sources */,
+				C46024872E26FF8A0032EDA6 /* Frameworks */,
+				C46024882E26FF8A0032EDA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C460248C2E26FF8A0032EDA6 /* PBXTargetDependency */,
+			);
+			name = GopeTalkieUITests;
+			packageProductDependencies = (
+			);
+			productName = GopeTalkieUITests;
+			productReference = C460248A2E26FF8A0032EDA6 /* GopeTalkieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C46024622E26FF880032EDA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					C46024692E26FF880032EDA6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C460247F2E26FF8A0032EDA6 = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+						TestTargetID = C46024692E26FF880032EDA6;
+					};
+					C46024892E26FF8A0032EDA6 = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+						TestTargetID = C46024692E26FF880032EDA6;
+					};
+				};
+			};
+			buildConfigurationList = C46024652E26FF880032EDA6 /* Build configuration list for PBXProject "GopeTalkie" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C46024612E26FF880032EDA6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C460246B2E26FF880032EDA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C46024692E26FF880032EDA6 /* GopeTalkie */,
+				C460247F2E26FF8A0032EDA6 /* GopeTalkieTests */,
+				C46024892E26FF8A0032EDA6 /* GopeTalkieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C46024682E26FF880032EDA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46025172E2918730032EDA6 /* ChannelsViewController.xib in Resources */,
+				C46024B52E2700540032EDA6 /* LoginViewController.xib in Resources */,
+				C46024A72E26FFCF0032EDA6 /* Assets.xcassets in Resources */,
+				C46024EC2E27F8E40032EDA6 /* RegisterViewController.xib in Resources */,
+				C46024FD2E2804DE0032EDA6 /* ChannelViewController.xib in Resources */,
+				C46025082E2905640032EDA6 /* ChannelsTableViewCell.xib in Resources */,
+				C47EB27B2E3BF58C002EA5A0 /* audio_end_talking.mp3 in Resources */,
+				C47EB27C2E3BF58C002EA5A0 /* audio_start_talking.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C460247E2E26FF8A0032EDA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46024882E26FF8A0032EDA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C46024662E26FF880032EDA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46025192E291ACE0032EDA6 /* ChannelsRouter.swift in Sources */,
+				C46024B42E2700540032EDA6 /* LoginViewController.swift in Sources */,
+				C46024DD2E27F8310032EDA6 /* RegisterAPIErrorResponse.swift in Sources */,
+				C46024CC2E2703530032EDA6 /* LoginProtocols.swift in Sources */,
+				C480A10F2E298481000E0C7F /* WebSocketServiceProtocol.swift in Sources */,
+				C46024F72E2804420032EDA6 /* ChannelPresenter.swift in Sources */,
+				C480A10A2E297B11000E0C7F /* AudioService.swift in Sources */,
+				C49947A42E624AE000CE40BB /* RegisterRepositoryProtocol.swift in Sources */,
+				C46024F52E28042A0032EDA6 /* ChannelInteractor.swift in Sources */,
+				C46024E62E27F8B40032EDA6 /* RegisterInteractor.swift in Sources */,
+				C47EB27E2E3BF5A2002EA5A0 /* SoundButtonService.swift in Sources */,
+				C48C3FD72E2AC6E600D9B24A /* UIColor+Hex.swift in Sources */,
+				C46025132E2917C90032EDA6 /* ChannelsPresenter.swift in Sources */,
+				C480A1072E297AE1000E0C7F /* AudioServiceProtocol.swift in Sources */,
+				C46091082E5F4D8000AE9A12 /* NetworkService.swift in Sources */,
+				C46025162E2918730032EDA6 /* ChannelsViewController.swift in Sources */,
+				C46024D92E27F75A0032EDA6 /* RegisterRequest.swift in Sources */,
+				C49947A82E624B2400CE40BB /* ChannelsRepositoryProtocol.swift in Sources */,
+				C46024F02E27F9480032EDA6 /* RegisterRouter.swift in Sources */,
+				C46024B82E2701A20032EDA6 /* APIConstants.swift in Sources */,
+				C46024C82E2702FC0032EDA6 /* LoginResponse.swift in Sources */,
+				C46025112E2916110032EDA6 /* ChannelsInteractor.swift in Sources */,
+				C460251D2E29439A0032EDA6 /* WebSocketService.swift in Sources */,
+				C46024D02E27038A0032EDA6 /* LoginInteractor.swift in Sources */,
+				C46024D22E2703A20032EDA6 /* LoginRouter.swift in Sources */,
+				C46024A42E26FFCF0032EDA6 /* AppDelegate.swift in Sources */,
+				C46024F32E2803F60032EDA6 /* LogoutResponse.swift in Sources */,
+				C46024E42E27F8930032EDA6 /* RegisterRepository.swift in Sources */,
+				C46025072E2905640032EDA6 /* ChannelsTableViewCell.swift in Sources */,
+				C480A10D2E298457000E0C7F /* WebSocketServiceDelegate.swift in Sources */,
+				C46024BA2E2702180032EDA6 /* URLRequest+Extensions.swift in Sources */,
+				C46024E22E27F86D0032EDA6 /* RegisterProtocols.swift in Sources */,
+				C46024CA2E2703180032EDA6 /* LoginAPIErrorResponse.swift in Sources */,
+				C46024C32E2702B30032EDA6 /* LoginRepository.swift in Sources */,
+				C46024CE2E2703730032EDA6 /* LoginPresenter.swift in Sources */,
+				C46024A52E26FFCF0032EDA6 /* SceneDelegate.swift in Sources */,
+				C47B30912E30276500275424 /* ChannelUsersRepository.swift in Sources */,
+				C460250F2E290AD20032EDA6 /* ChannelsProtocols.swift in Sources */,
+				C48C3FD92E2AC99400D9B24A /* UIViewController+GradientBackground.swift in Sources */,
+				C46024E82E27F8CB0032EDA6 /* RegisterPresenter.swift in Sources */,
+				C46024FF2E2805390032EDA6 /* ChannelRouter.swift in Sources */,
+				C46024D52E27040F0032EDA6 /* KeyboardHandling.swift in Sources */,
+				C46024BC2E27023B0032EDA6 /* TokenManager.swift in Sources */,
+				C46024EB2E27F8E40032EDA6 /* RegisterViewController.swift in Sources */,
+				C46024F92E2804520032EDA6 /* ChannelProtocols.swift in Sources */,
+				C49947A62E624B0F00CE40BB /* ChannelUsersRepositoryProtocol.swift in Sources */,
+				C460250A2E290A200032EDA6 /* ChannelsRepository.swift in Sources */,
+				C46024C62E2702E90032EDA6 /* LoginRequest.swift in Sources */,
+				C49947A22E624ABD00CE40BB /* LoginRepositoryProtocol.swift in Sources */,
+				C460250D2E290A8B0032EDA6 /* Channels.swift in Sources */,
+				C46024EE2E27F92D0032EDA6 /* StyleTextField.swift in Sources */,
+				C460251B2E2939B00032EDA6 /* ChannelViewController.swift in Sources */,
+				C46024DB2E27F81B0032EDA6 /* RegisterResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C460247C2E26FF8A0032EDA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45E284E2E5E008100FE340D /* RegisterEntitiesTests.swift in Sources */,
+				C4B989572E3410A9004CC463 /* ChannelsPresenterTests.swift in Sources */,
+				C45D92FE2E31719000B3033B /* MockLoginInteractor.swift in Sources */,
+				C4B9894D2E340F50004CC463 /* ChannelsInteractorTests.swift in Sources */,
+				C45D930C2E3173F400B3033B /* LoginInteractorTests.swift in Sources */,
+				C45DBFA92E351991007DAD63 /* MockChannelPresenter.swift in Sources */,
+				C45DBFB12E351CDB007DAD63 /* MockChannelInteractor.swift in Sources */,
+				C45DBFAB2E3519E8007DAD63 /* ChannelInteractorTests.swift in Sources */,
+				C45D92E52E31664500B3033B /* MockRegisterInteractorOutput.swift in Sources */,
+				C45D92E72E31672600B3033B /* MockRegisterRepository.swift in Sources */,
+				C45D93102E31755600B3033B /* LoginRepositoryTests.swift in Sources */,
+				C4B989512E340FC7004CC463 /* MockChannelsInteractor.swift in Sources */,
+				C45D930A2E31731A00B3033B /* LoginPresenterTests.swift in Sources */,
+				C45E284C2E5DF53600FE340D /* LoginEntitiesTests.swift in Sources */,
+				C45D92ED2E31683D00B3033B /* RegisterInteractorTests.swift in Sources */,
+				C45D93002E3171A700B3033B /* MockLoginRouter.swift in Sources */,
+				C45DBFAD2E351C66007DAD63 /* MockWebSocketService.swift in Sources */,
+				C4B9895D2E3414CD004CC463 /* ChannelsRepositoryTests.swift in Sources */,
+				C45E28502E5E0F4B00FE340D /* ChannelsEntitiesTests.swift in Sources */,
+				C45DBFB32E351D3B007DAD63 /* MockChannelRouter.swift in Sources */,
+				C466098F2E3BAB8900834531 /* MockChannelUsersRepository.swift in Sources */,
+				C45DBFB52E351E54007DAD63 /* ChannelPresenterTests.swift in Sources */,
+				C4B9894F2E340FA7004CC463 /* MockChannelsView.swift in Sources */,
+				C460910E2E5F663F00AE9A12 /* AudioServiceTests.swift in Sources */,
+				C45D93022E3171BF00B3033B /* MockLoginRepository.swift in Sources */,
+				C45D92DF2E31647300B3033B /* MockRegisterView.swift in Sources */,
+				C45D93042E31723000B3033B /* MockLoginInteractorOutput.swift in Sources */,
+				C45DBFB72E352CF4007DAD63 /* ChannelUsersRepositoryTests.swift in Sources */,
+				C45D92F62E31704F00B3033B /* StubURLProtocol.swift in Sources */,
+				C45D92FC2E31717B00B3033B /* MockLoginView.swift in Sources */,
+				C45DBFAF2E351C90007DAD63 /* MockAudioService.swift in Sources */,
+				C45D92EF2E3168E200B3033B /* RegisterPresenterTests.swift in Sources */,
+				C4B989492E340F12004CC463 /* MockChannelsRepository.swift in Sources */,
+				C45D92F82E31706D00B3033B /* RegisterRepositoryTests.swift in Sources */,
+				C4B9894B2E340F31004CC463 /* MockChannelsInteractorOutput.swift in Sources */,
+				C45DBFA12E350D00007DAD63 /* MockChannelView.swift in Sources */,
+				C45D92E12E3164B100B3033B /* MockRegisterInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46024862E26FF8A0032EDA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45D92F12E316AB600B3033B /* RegisterUITests.swift in Sources */,
+				C45DBFB92E353015007DAD63 /* ChannelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C46024822E26FF8A0032EDA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C46024692E26FF880032EDA6 /* GopeTalkie */;
+			targetProxy = C46024812E26FF8A0032EDA6 /* PBXContainerItemProxy */;
+		};
+		C460248C2E26FF8A0032EDA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C46024692E26FF880032EDA6 /* GopeTalkie */;
+			targetProxy = C460248B2E26FF8A0032EDA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C46024942E26FF8A0032EDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM6BAFTMD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GopeTalkie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C46024952E26FF8A0032EDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM6BAFTMD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GopeTalkie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C46024962E26FF8A0032EDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C46024972E26FF8A0032EDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C46024992E26FF8A0032EDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GopeTalkie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GopeTalkie";
+			};
+			name = Debug;
+		};
+		C460249A2E26FF8A0032EDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GopeTalkie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GopeTalkie";
+			};
+			name = Release;
+		};
+		C460249C2E26FF8A0032EDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GopeTalkie;
+			};
+			name = Debug;
+		};
+		C460249D2E26FF8A0032EDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GopeTalkie.GopeTalkieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GopeTalkie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C46024652E26FF880032EDA6 /* Build configuration list for PBXProject "GopeTalkie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46024962E26FF8A0032EDA6 /* Debug */,
+				C46024972E26FF8A0032EDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46024932E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46024942E26FF8A0032EDA6 /* Debug */,
+				C46024952E26FF8A0032EDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46024982E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46024992E26FF8A0032EDA6 /* Debug */,
+				C460249A2E26FF8A0032EDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C460249B2E26FF8A0032EDA6 /* Build configuration list for PBXNativeTarget "GopeTalkieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C460249C2E26FF8A0032EDA6 /* Debug */,
+				C460249D2E26FF8A0032EDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C46024622E26FF880032EDA6 /* Project object */;
+}
