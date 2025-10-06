@@ -11,6 +11,10 @@
 - UI Framework: UIKit
 - Uses `.xib`
 
+### VIPER Architecture Diagram
+
+![VIPER Architecture](https://secture.code.blog/wp-content/uploads/2018/12/esquema.jpg?w=749)
+
 ## 3. Main Features
 - Register and Login with API
 - Real-time audio communication with WebSocket
@@ -48,3 +52,22 @@ GopeTalkie/
 ## 7. Testing
 - Framework used: **XCTest**
 - Strategy: Unit Tests, Integration Tests, UI Tests, E2E Tests
+
+## 8. Contributing
+Contributions are welcome! If you have a suggestion or want to contribute to the code, please follow these guidelines.
+
+### Reporting Bugs
+- Use the GitHub issue tracker to report bugs.
+- Please provide a detailed description of the bug, including steps to reproduce it, the expected behavior, and the actual behavior.
+
+### Suggesting Enhancements
+- Use the GitHub issue tracker to suggest enhancements.
+- Explain in detail what you would like to see improved or added.
+
+### Pull Request Process
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name` or `bugfix/your-bug-fix-name`.
+3. Make your changes and commit them with a descriptive message.
+4. Push your branch to your fork: `git push origin feature/your-feature-name`.
+5. Create a pull request to the `main` branch of this repository.
+6. Please provide a clear description of the changes in your pull request.
